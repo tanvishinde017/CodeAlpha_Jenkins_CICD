@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/tanvishinde017/CodeAlpha_Jenkins_CICD.git'
-            }
-        }
 
         stage('Install Dependencies') {
             steps {
@@ -16,7 +11,7 @@ pipeline {
 
         stage('Build Successful') {
             steps {
-                echo 'Build Completed Successfully!'
+                echo 'Build Successful!'
             }
         }
     }
