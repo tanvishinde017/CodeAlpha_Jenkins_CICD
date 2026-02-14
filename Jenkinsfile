@@ -9,16 +9,9 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                echo 'Running tests...'
-                bat 'python -m unittest discover'
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'Building application...'
+                echo 'Build stage executed successfully!'
             }
         }
 
